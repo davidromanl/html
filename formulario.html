@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2 class="titulo">Registro de Usuario</h2>
+    <div class="subtitulo">
+        <h4>Formulario</h4>
+    </div>
+
+    <form action="recibido.html">
+        <table width="100%">
+            <tr>
+                <td class="fondo">
+                    <label for="name">Nombre:</label>
+                    <input class="inputs" id="name" required="required" name="nombre" type="text">
+                </td>
+                <td class="fondo">
+                    <label for="apellido">Apellido:</label>
+                    <input class="inputs" name="apellido" id="apellido" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" name="telefono" id="tel">
+                </td>
+                <td>
+                    <label for="email">Correo</label>
+                    <input type="email" name="" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="">Seleccione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="fecha">Fecha Nacimiento:</label>
+                    <input type="date" name="fechaNacimiento" id="fecha">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="usuario" name="usuario" id="usuario">
+                </td>
+                <td>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.subtitulo {
+    padding: 10px;
+    background-color: aquamarine;
+}
+.titulo {
+    background-color: lightsteelblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(46, 45, 44);
+    font-size:larger;
+}
+
+input, select {
+    border-width: 2;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 5px;
+}
+table {
+    color: white;
+    text-align: center;
+    background-color: rgba(195, 184, 168, 0.155);
+}
+td {
+    padding: 5px;
+}
