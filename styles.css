@@ -29,3 +29,7 @@ table {
 td {
     padding: 5px;
 }
+.container {
+    max-width: 550px;
+    margin: auto;
+}
