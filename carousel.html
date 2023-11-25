@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrusel con máscara y Vue 3 + Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- <div id="app">
+      {{maskTransform}}
+      <div class="flex justify-center items-center h-screen">
+        <div class="w-3/4 overflow-hidden border">
+          <div class="relative" ref="refContainer" @mousemove="moveMask">
+            <div
+              class="flex w-fit gap-2 transition-transform duration-200 ease-[cubic-bezier(0.25, 0.46, 0.45, 0.94)]"
+              :style="{ transform: maskTransform }"
+              ref="maskContainer"
+            >
+              <div
+                v-for="index in 40"
+                :key="index"
+                class="relative w-[370px] h-[145px] flex-shrink-0"
+              >
+                <span class="absolute">{{index}}</span>
+                <img
+                  :src="`https://picsum.photos/370/145?random=${index}`"
+                  :alt="'Imagen ' + (index + 1)"
+                  class="w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div id="app">
+      <div class="flex justify-center items-center h-screen">
+        <div class="w-3/4 overflow-hidden relative" @mousemove="moveMask">
+          <div
+            class="flex transition-transform duration-500 ease-in-out"
+            :style="{ transform: maskTransform }"
+            ref="maskContainer"
+          >
+            <img
+              v-for="(image, index) in visibleImages"
+              :src="image.src"
+              :alt="image.alt"
+              :key="index"
+              class="w-full"
+              ref="imageRef(index)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
