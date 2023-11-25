@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body class="bg-light">
+
+  <!-- Menu Navegacion -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Empresa</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Contenido -->
+    <div class="container bg-white border p-4 rounded mt-3">
+      <h1>La Empresa de Diseño Web</h1>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://fakeimg.pl/1100x400/889fa6/ffffff?text=Diseño+Web"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://fakeimg.pl/1100x400/906bd1/ffffff?text=Optimización+para+Móviles"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://fakeimg.pl/1100x400/639db0/ffffff?text=Marketing+Digital"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col">
+          En La Empresa de Diseño Web, creamos experiencias digitales
+          impactantes que impulsan tu presencia en línea. Desde el diseño de
+          sitios web a medida hasta estrategias de marketing digital, estamos
+          aquí para potenciar tu marca.
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col col-12 col-md-4">
+          <strong>Diseño Web Personalizado:</strong>
+          <p>
+            Creamos sitios web a medida que reflejan la identidad y los
+            objetivos de tu marca.
+          </p>
+        </div>
+        <div
+          class="col col-12 col-md-4 p-3 rounded text-white bg-secondary bg-gradient"
+        >
+          <strong>Optimización para Móviles: </strong>
+          <p>
+            Aseguramos que tu sitio sea receptivo y esté optimizado para
+            dispositivos móviles.
+          </p>
+        </div>
+        <div class="col col-12 col-md-4">
+          <strong>Estrategia de Marketing Digital: </strong>
+          <p>
+            Desarrollamos estrategias de marketing digital que aumentan la
+            visibilidad y la interacción con tu audiencia.
+          </p>
+        </div>
+
+        <footer></footer>
+      </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>

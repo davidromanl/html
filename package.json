@@ -1,0 +1,22 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidromanl/html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidromanl/html/issues"
+  },
+  "homepage": "https://github.com/davidromanl/html#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
