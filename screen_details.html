@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">{{ data }}</div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          data: {},
+        },
+        created() {
+            this.getWindowManagementPermission();
+            this.data = window.screen.isExtended
+        },
+        methods: {
+            async getScreenDetails() {
+                this.data = await window.getScreenDetails();
+            },
+            async getWindowManagementPermission() {
+                const { state } = await navigator.permissions.query({
+                    name: 'window-management',
+                })
+                if(state === 'prompt') {
+                  navigator.permissions.request()
+                }
+                console.log(state);
+            },
+            
+        },
+      });
+    </script>
+  </body>
+</html>
